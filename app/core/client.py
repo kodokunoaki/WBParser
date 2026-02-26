@@ -21,7 +21,7 @@ HEADERS = {
 }
 
 
-class HttpClient:
+class HttpClient:  # pylint: disable=missing-class-docstring
     def __init__(self) -> None:
         self._session: Optional[aiohttp.ClientSession] = None
 

@@ -1,7 +1,7 @@
 """Wildberries catalog and product detail scraping service."""
 
 import logging
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
 from app.core.client import HttpClient
 from app.core.config import settings
@@ -10,7 +10,7 @@ from app.core.utils import build_image_urls, build_search_url, throttle
 logger = logging.getLogger(settings.PROJECT_NAME)
 
 
-class WildberriesScraper:
+class WildberriesScraper:  # pylint: disable=missing-class-docstring
     def __init__(self, client: HttpClient) -> None:
         self._client = client
 

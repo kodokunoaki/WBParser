@@ -3,7 +3,7 @@
 from pydantic_settings import BaseSettings
 
 
-class Settings(BaseSettings):
+class Settings(BaseSettings):  # pylint: disable=missing-class-docstring
     PROJECT_NAME: str = "WBParser"
 
     WB_SEARCH_URL: str

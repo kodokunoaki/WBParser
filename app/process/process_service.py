@@ -50,7 +50,7 @@ def _build_row(product: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-class ProductProcessor:
+class ProductProcessor:  # pylint: disable=missing-class-docstring
     def build_dataframe(self, products: List[Dict[str, Any]]) -> pd.DataFrame:
         logger.info("Building dataframe from %d products", len(products))
         rows = [_build_row(p) for p in products]

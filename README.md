@@ -37,7 +37,7 @@ No external service accounts or API keys required - the parser uses the same pub
 1. Clone or unzip the project:
    ```bash
    git clone https://github.com/kodokunoaki/WBParser.git
-   cd wb_parser
+   cd WBParser
    ```
 
 2. Create and activate a virtual environment:
